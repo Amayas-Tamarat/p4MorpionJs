@@ -1,0 +1,54 @@
+<head>
+    <title>TP-UTC-503</title>
+
+    <script src="Player.js"></script>
+    <script src="PlayerSelect.js"></script>
+    <script src="Cell.js"></script>
+    <script src="Morpion.js"></script>
+    <script src="Puissance-4.js"></script>
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="content">
+
+        <div id="player-select">
+            <table>
+                <thead>
+                <tr>
+                    <td colspan="6">
+                        Joueurs
+                        <button onclick="addActivePlayer()">
+                            Ajouter
+                        </button>
+                        (min 2, max 4)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nom Joueur</td>
+                    <td>Couleur Joueur</td>
+                    <td>Joueur Auto</td>
+                    <td>Score Morpion</td>
+                    <td>Score Puissance 4</td>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="games">
+            <div id="start-games">
+                <button id="start-Morpion" onclick="startGames()">Commencer Morpion</button>
+                <button id="start-Puissance-4" onclick="startPuissance4()">Commencer Puissance 4</button>
+            </div>
+            <div id="Puissance4"></div>
+            <div id="Morpion"></div>
+        </div>
+    </div>
+</body>
